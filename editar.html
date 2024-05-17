@@ -62,22 +62,22 @@
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
-                        <!-- Nav Item - Pages Collapse Menu -->
-                        <li class="nav-item">
-                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                                aria-expanded="true" aria-controls="collapsePages">
-                                <i class="fas fa-fw fa-folder"></i>
-                                <span>Paginas</span>
-                            </a>
-                            <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                                <div class="bg-white py-2 collapse-inner rounded">
-                                    <a class="collapse-item" href="login.html">Iniciar sesión</a>
-                                    <a class="collapse-item" href="register.html">Registro</a>
-                                    <a class="collapse-item" href="forgot-password.html">Olvido contraseña</a>
-                                    <div class="collapse-divider"></div>
-                                </div>
-                            </div>
-                        </li>
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Paginas</span>
+                </a>
+                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="login.html">Iniciar sesión</a>
+                        <a class="collapse-item" href="register.html">Registro</a>
+                        <a class="collapse-item" href="forgot-password.html">Olvido contraseña</a>
+                        <div class="collapse-divider"></div>
+                    </div>
+                </div>
+            </li>
 
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
@@ -334,14 +334,16 @@
                                                     <label class="form-label" for="form6Example1">Nombre</label>
                                                     <input type="text" id="form6Example1" class="form-control"
                                                         pattern="[A-Za-z\s]+"
-                                                        title="Solo letras y espacios están permitidos" placeholder="Andres Camilo"/>
+                                                        title="Solo letras y espacios están permitidos"
+                                                        placeholder="Andres Camilo" />
                                                 </div>
                                             </div>
 
                                             <div class="col">
                                                 <div data-mdb-input-init class="form-outline">
                                                     <label class="form-label" for="form6Example2">Vocación</label>
-                                                    <input type="text" id="form6Example2" class="form-control" placeholder="Ingeniería de Software"/>
+                                                    <input type="text" id="form6Example2" class="form-control"
+                                                        placeholder="Ingeniería de Software" />
                                                 </div>
                                             </div>
                                         </div>
@@ -349,25 +351,29 @@
                                         <!-- Text input -->
                                         <div data-mdb-input-init class="form-outline mb-4">
                                             <label class="form-label" for="form6Example3">Oficina</label>
-                                            <input type="text" id="form6Example3" class="form-control" placeholder="cauca"/>
+                                            <input type="text" id="form6Example3" class="form-control"
+                                                placeholder="cauca" />
                                         </div>
 
                                         <!-- Text input -->
                                         <div data-mdb-input-init class="form-outline mb-4">
                                             <label class="form-label" for="form6Example4">Objeto</label>
-                                            <input type="text" id="form6Example4" class="form-control" placeholder="Reloj rolex"/>
+                                            <input type="text" id="form6Example4" class="form-control"
+                                                placeholder="Reloj rolex" />
                                         </div>
 
                                         <!-- Email input -->
                                         <div data-mdb-input-init class="form-outline mb-4">
                                             <label class="form-label" for="form6Example5">Fecha</label>
-                                            <input type="email" id="form6Example5" class="form-control" placeholder="2024/04/25"/>
+                                            <input type="email" id="form6Example5" class="form-control"
+                                                placeholder="2024/04/25" />
                                         </div>
 
                                         <!-- Number input -->
                                         <div data-mdb-input-init class="form-outline mb-4">
                                             <label class="form-label" for="form6Example6">Precio</label>
-                                            <input type="number" id="form6Example6" class="form-control" placeholder="50000"/>
+                                            <input type="number" id="form6Example6" class="form-control"
+                                                placeholder="50000" />
                                         </div>
 
                                         <!-- Submit button -->
@@ -452,7 +458,9 @@
                     title: "",
                     text: "Editado con exito",
                     icon: "success",
-                    confirmButtonText: "Aceptar"
+                    showCancelButton: true,
+                    confirmButtonText: "Aceptar",
+                    cancelButtonText: "Cancelar"
                 }).then((result) => {
                     if (result.isConfirmed) {
                         window.location.href = 'tables.html';
@@ -468,19 +476,19 @@
         window.addEventListener('touchstart', initLandbot, { once: true });
         var myLandbot;
         function initLandbot() {
-          if (!myLandbot) {
-            var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
-            s.addEventListener('load', function() {
-              var myLandbot = new Landbot.Livechat({
-                configUrl: 'https://storage.googleapis.com/landbot.site/v3/H-2225076-HX8I1Q8BVK574I0F/index.json',
-              });
-            });
-            s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
-            var x = document.getElementsByTagName('script')[0];
-            x.parentNode.insertBefore(s, x);
-          }
+            if (!myLandbot) {
+                var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+                s.addEventListener('load', function () {
+                    var myLandbot = new Landbot.Livechat({
+                        configUrl: 'https://storage.googleapis.com/landbot.site/v3/H-2225076-HX8I1Q8BVK574I0F/index.json',
+                    });
+                });
+                s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            }
         }
-        </script>
+    </script>
 
 
 </body>

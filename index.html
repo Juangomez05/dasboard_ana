@@ -454,7 +454,9 @@
                     title: "",
                     text: "Guardado con exito",
                     icon: "success",
-                    confirmButtonText: "Aceptar"
+                    showCancelButton: true,
+                    confirmButtonText: "Aceptar",
+                    cancelButtonText: "Cancelar"
                 }).then((result) => {
                     if (result.isConfirmed) {
                         window.location.href = 'tables.html';
