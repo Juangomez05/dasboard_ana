@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title>Publicar</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -51,6 +51,18 @@
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Publicar</span></a>
             </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href=".html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Editar</span></a>
+            </li>
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Nav Item - Dashboard -->
+
+
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
@@ -288,6 +300,14 @@
                 <!-- End of Topbar -->
 
                 <div class="container">
+
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="tables.html">Inicio</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Publicar</li>
+                        </ol>
+                    </nav>
+
                     <div class="row justify-content-center">
                         <div class="col-lg-6">
                             <!-- Overflow Hidden -->
@@ -422,7 +442,11 @@
                     title: "",
                     text: "Guardado con exito",
                     icon: "success",
-                    confirmButtonText: "Ok"
+                    confirmButtonText: "Aceptar"
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.location.href = 'tables.html';
+                    }
                 });
             });
         });
@@ -434,19 +458,19 @@
         window.addEventListener('touchstart', initLandbot, { once: true });
         var myLandbot;
         function initLandbot() {
-          if (!myLandbot) {
-            var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
-            s.addEventListener('load', function() {
-              var myLandbot = new Landbot.Livechat({
-                configUrl: 'https://storage.googleapis.com/landbot.site/v3/H-2225076-HX8I1Q8BVK574I0F/index.json',
-              });
-            });
-            s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
-            var x = document.getElementsByTagName('script')[0];
-            x.parentNode.insertBefore(s, x);
-          }
+            if (!myLandbot) {
+                var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+                s.addEventListener('load', function () {
+                    var myLandbot = new Landbot.Livechat({
+                        configUrl: 'https://storage.googleapis.com/landbot.site/v3/H-2225076-HX8I1Q8BVK574I0F/index.json',
+                    });
+                });
+                s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            }
         }
-        </script>
+    </script>
 
 
 </body>
