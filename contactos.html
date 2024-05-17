@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title>SB Admin 2 - Charts</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -19,10 +19,6 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-
-    <!-- SweetAlert2 CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
-
 
 </head>
 
@@ -35,7 +31,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="tables.html">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-box-open"></i>
                 </div>
@@ -52,6 +48,7 @@
                     <span>Publicar</span></a>
             </li>
 
+
             <!-- Nav Item - Tables -->
             <li class="nav-item active">
                 <a class="nav-link" href="tables.html">
@@ -62,22 +59,22 @@
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
-                        <!-- Nav Item - Pages Collapse Menu -->
-                        <li class="nav-item">
-                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                                aria-expanded="true" aria-controls="collapsePages">
-                                <i class="fas fa-fw fa-folder"></i>
-                                <span>Paginas</span>
-                            </a>
-                            <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                                <div class="bg-white py-2 collapse-inner rounded">
-                                    <a class="collapse-item" href="login.html">Iniciar sesión</a>
-                                    <a class="collapse-item" href="register.html">Registro</a>
-                                    <a class="collapse-item" href="forgot-password.html">Olvido contraseña</a>
-                                    <div class="collapse-divider"></div>
-                                </div>
-                            </div>
-                        </li>
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Paginas</span>
+                </a>
+                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="login.html">Iniciar sesión</a>
+                        <a class="collapse-item" href="register.html">Registro</a>
+                        <a class="collapse-item" href="forgot-password.html">Olvido contraseña</a>
+                        <div class="collapse-divider"></div>
+                    </div>
+                </div>
+            </li>
 
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
@@ -309,179 +306,136 @@
 
                 </nav>
                 <!-- End of Topbar -->
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
 
-                <div class="container">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="tables.html">Inicio</a></li>
-                            <li class="breadcrumb-item"><a href="tables.html">Objetos Perdidos</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Editar</li>
+                            <li class="breadcrumb-item active" aria-current="page">Contacto</li>
                         </ol>
                     </nav>
-                    <div class="row justify-content-center">
-                        <div class="col-lg-6">
-                            <!-- Overflow Hidden -->
-                            <div class="card mb-4">
+
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-2 text-gray-800">¡ Lo encontramos !</h1>
+                    <p class="mb-4">Aquí puedes comunicarte con la persona que encontró tus pertenencias.</p>
+
+                    <!-- Content Row -->
+                    <div class="row">
+
+                        <!-- Primer contenedor existente -->
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+
+                            <!-- Area Chart -->
+                            <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Editar un objeto perdido</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Reloj, un audífono y 100 euros</h6>
                                 </div>
                                 <div class="card-body">
-                                    <form>
-                                        <!-- 2 column grid layout with text inputs for the first and last names -->
-                                        <div class="row mb-4">
-                                            <div class="col">
-                                                <div data-mdb-input-init class="form-outline">
-                                                    <label class="form-label" for="form6Example1">Nombre</label>
-                                                    <input type="text" id="form6Example1" class="form-control"
-                                                        pattern="[A-Za-z\s]+"
-                                                        title="Solo letras y espacios están permitidos" placeholder="Andres Camilo"/>
-                                                </div>
-                                            </div>
-
-                                            <div class="col">
-                                                <div data-mdb-input-init class="form-outline">
-                                                    <label class="form-label" for="form6Example2">Vocación</label>
-                                                    <input type="text" id="form6Example2" class="form-control" placeholder="Ingeniería de Software"/>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Text input -->
-                                        <div data-mdb-input-init class="form-outline mb-4">
-                                            <label class="form-label" for="form6Example3">Oficina</label>
-                                            <input type="text" id="form6Example3" class="form-control" placeholder="cauca"/>
-                                        </div>
-
-                                        <!-- Text input -->
-                                        <div data-mdb-input-init class="form-outline mb-4">
-                                            <label class="form-label" for="form6Example4">Objeto</label>
-                                            <input type="text" id="form6Example4" class="form-control" placeholder="Reloj rolex"/>
-                                        </div>
-
-                                        <!-- Email input -->
-                                        <div data-mdb-input-init class="form-outline mb-4">
-                                            <label class="form-label" for="form6Example5">Fecha</label>
-                                            <input type="email" id="form6Example5" class="form-control" placeholder="2024/04/25"/>
-                                        </div>
-
-                                        <!-- Number input -->
-                                        <div data-mdb-input-init class="form-outline mb-4">
-                                            <label class="form-label" for="form6Example6">Precio</label>
-                                            <input type="number" id="form6Example6" class="form-control" placeholder="50000"/>
-                                        </div>
-
-                                        <!-- Submit button -->
-                                        <button id="alertButtonEditar" data-mdb-ripple-init type="button"
-                                            class="btn btn-primary btn-block mb-4">Editar cambios</button>
-                                    </form>
+                                    <div class="chart-area">
+                                        <img src="https://www.diariojaen.es/binrepository/960x432/96c0/768d432/none/10717/FGBR/objetos-perdidos_16277627_20230306212006.jpg"
+                                            width="330" height="250" alt="Bolso de mano encontrado en la cafetería"
+                                            class="small-image">
+                                        <img src="https://estaticos-cdn.prensaiberica.es/clip/c14de559-ca27-47ca-a004-7eac6f1eceb5_source-aspect-ratio_default_0.jpg"
+                                            width="330" height="250" alt="Otra imagen relacionada">
+                                    </div>
+                                    <hr>
+                                    Hola Juan, pasa por la oficina de objetos perdidos de Corporación Universitaria
+                                    Autónoma del Cauca que encontramos tus pertenencias
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
 
+                        <!-- Segundo contenedor añadido -->
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+                            <!-- Otro Contenido -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">¿Quien encontro tu objeto?</h6>
+                                </div>
+                                <div class="card-body">
+                                    <img src="https://scontent.fclo1-4.fna.fbcdn.net/v/t39.30808-6/419852609_695343342586454_7471273496776781696_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=s669vxBDxDcQ7kNvgGqgus1&_nc_ht=scontent.fclo1-4.fna&oh=00_AYBAP6L9IStKad8EXl8hosC0Skw0d-OPTNKUah5R1Zsl1Q&oe=664CCB7C"
+                                        width="230" height="250" alt="Bolso de mano encontrado en la cafetería"
+                                        class="small-image">
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                        Monkey Granizados</p>
+                                    <p> Comunicate</p>
+                                    <p> Whatsapp: <a
+                                            href="https://wa.me/573176936935">317 6936935</a></p>
+                                    <p> Facebook: <a href="https://www.facebook.com/monkeygranizados?locale=es_LA">Monkey Granizados</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /.container-fluid -->
+
+                </div>
+                <!-- End of Main Content -->
+
+                <!-- Footer -->
+                <footer class="sticky-footer bg-white">
+                    <div class="container my-auto">
+                        <div class="copyright text-center my-auto">
+                            <span>Copyright &copy; Your Website 2020</span>
+                        </div>
+                    </div>
+                </footer>
+                <!-- End of Footer -->
 
             </div>
-            <!-- End of Main Content -->
-
-            <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
-                    </div>
-                </div>
-            </footer>
-            <!-- End of Footer -->
+            <!-- End of Content Wrapper -->
 
         </div>
-        <!-- End of Content Wrapper -->
+        <!-- End of Page Wrapper -->
 
-    </div>
-    <!-- End of Page Wrapper -->
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top">
+            <i class="fas fa-angle-up"></i>
+        </a>
 
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
-
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">¿Listo para salir?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Seleccione "Cerrar sesión" a continuación si está listo para finalizar su sesión
-                    actual.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-                    <a class="btn btn-primary" href="login.html">Cerrar sesión</a>
+        <!-- Logout Modal-->
+        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                        <a class="btn btn-primary" href="login.html">Logout</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap core JavaScript-->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        <!-- Core plugin JavaScript-->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+        <!-- Custom scripts for all pages-->
+        <script src="js/sb-admin-2.min.js"></script>
 
-    <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
+        <!-- Page level plugins -->
+        <script src="vendor/chart.js/Chart.min.js"></script>
 
-    <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
-
-    <!-- SweetAlert2 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script>
-        document.querySelectorAll('#alertButtonEditar').forEach(button => {
-            button.addEventListener('click', function () {
-                Swal.fire({
-                    title: "",
-                    text: "Editado con exito",
-                    icon: "success",
-                    confirmButtonText: "Aceptar"
-                }).then((result) => {
-                    if (result.isConfirmed) {
-                        window.location.href = 'tables.html';
-                    }
-                });
-            });
-        });
-    </script>
-
-
-    <script>
-        window.addEventListener('mouseover', initLandbot, { once: true });
-        window.addEventListener('touchstart', initLandbot, { once: true });
-        var myLandbot;
-        function initLandbot() {
-          if (!myLandbot) {
-            var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
-            s.addEventListener('load', function() {
-              var myLandbot = new Landbot.Livechat({
-                configUrl: 'https://storage.googleapis.com/landbot.site/v3/H-2225076-HX8I1Q8BVK574I0F/index.json',
-              });
-            });
-            s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
-            var x = document.getElementsByTagName('script')[0];
-            x.parentNode.insertBefore(s, x);
-          }
-        }
-        </script>
-
+        <!-- Page level custom scripts -->
+        <script src="js/demo/chart-area-demo.js"></script>
+        <script src="js/demo/chart-pie-demo.js"></script>
+        <script src="js/demo/chart-bar-demo.js"></script>
 
 </body>
 
