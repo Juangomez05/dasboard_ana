@@ -267,8 +267,7 @@
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_1.svg" alt="...">
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div class="font-weight-bold">
@@ -279,8 +278,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_2.svg" alt="...">
                                         <div class="status-indicator"></div>
                                     </div>
                                     <div>
@@ -291,8 +289,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_3.svg" alt="...">
                                         <div class="status-indicator bg-warning"></div>
                                     </div>
                                     <div>
@@ -324,8 +321,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                                <img class="img-profile rounded-circle"
-                                    src="img/undraw_profile.svg">
+                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -367,86 +363,67 @@
 
                     <!-- Content Row -->
                     <div class="row">
-
-                        <div class="col-lg-6">
-
+                        <div class="col-lg-6 d-flex justify-content-center">
                             <!-- Overflow Hidden -->
                             <div class="card mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Overflow Hidden Utilty</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Editar objeto</h6>
                                 </div>
                                 <div class="card-body">
-                                    Use <code>.o-hidden</code> to set the overflow property of any element to hidden.
-                                </div>
-                            </div>
+                                    <form>
+                                        <!-- 2 column grid layout with text inputs for the first and last names -->
+                                        <div class="row mb-4">
+                                            <div class="col">
+                                                <div data-mdb-input-init class="form-outline">
+                                                    <input type="text" id="form6Example1" class="form-control"
+                                                        pattern="[A-Za-z\s]+"
+                                                        title="Solo letras y espacios están permitidos" />
+                                                    <label class="form-label" for="form6Example1">Name</label>
+                                                </div>
+                                            </div>
 
-                            <!-- Progress Small -->
-                            <div class="card mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Progress Small Utility</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="mb-1 small">Normal Progress Bar</div>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar" role="progressbar" style="width: 75%"
-                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <div class="mb-1 small">Small Progress Bar</div>
-                                    <div class="progress progress-sm mb-2">
-                                        <div class="progress-bar" role="progressbar" style="width: 75%"
-                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    Use the <code>.progress-sm</code> class along with <code>.progress</code>
-                                </div>
-                            </div>
-
-                            <!-- Dropdown No Arrow -->
-                            <div class="card mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Dropdown - No Arrow</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="dropdown no-arrow mb-4">
-                                        <button class="btn btn-secondary dropdown-toggle" type="button"
-                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="false">
-                                            Dropdown (no arrow)
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="col">
+                                                <div data-mdb-input-init class="form-outline">
+                                                    <input type="text" id="form6Example2" class="form-control" />
+                                                    <label class="form-label" for="form6Example2">Position</label>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    Add the <code>.no-arrow</code> class alongside the <code>.dropdown</code>
+
+                                        <!-- Text input -->
+                                        <div data-mdb-input-init class="form-outline mb-4">
+                                            <input type="text" id="form6Example3" class="form-control" />
+                                            <label class="form-label" for="form6Example3">Office</label>
+                                        </div>
+
+                                        <!-- Text input -->
+                                        <div data-mdb-input-init class="form-outline mb-4">
+                                            <input type="text" id="form6Example4" class="form-control" />
+                                            <label class="form-label" for="form6Example4">Age</label>
+                                        </div>
+
+                                        <!-- Email input -->
+                                        <div data-mdb-input-init class="form-outline mb-4">
+                                            <input type="email" id="form6Example5" class="form-control" />
+                                            <label class="form-label" for="form6Example5">Start date</label>
+                                        </div>
+
+                                        <!-- Number input -->
+                                        <div data-mdb-input-init class="form-outline mb-4">
+                                            <input type="number" id="form6Example6" class="form-control" />
+                                            <label class="form-label" for="form6Example6">Salary</label>
+                                        </div>
+
+                                        <!-- Submit button -->
+                                        <button data-mdb-ripple-init type="button"
+                                            class="btn btn-primary btn-block mb-4">Guardar cambios</button>
+                                    </form>
                                 </div>
                             </div>
-
                         </div>
-
-                        <div class="col-lg-6">
-
-                            <!-- Roitation Utilities -->
-                            <div class="card">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Rotation Utilities</h6>
-                                </div>
-                                <div class="card-body text-center">
-                                    <div class="bg-primary text-white p-3 rotate-15 d-inline-block my-4">.rotate-15
-                                    </div>
-                                    <hr>
-                                    <div class="bg-primary text-white p-3 rotate-n-15 d-inline-block my-4">.rotate-n-15
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
                     </div>
-
                 </div>
                 <!-- /.container-fluid -->
-
             </div>
             <!-- End of Main Content -->
 
